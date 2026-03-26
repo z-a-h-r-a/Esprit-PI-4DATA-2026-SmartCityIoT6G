@@ -3,65 +3,47 @@
 ## Overview
 This project was developed as part of the PI – 4th Year Engineering Program at **Esprit School of Engineering** (Academic Year 2025–2026).
 
-It consists of an AI-powered cybersecurity system designed to detect and defend against attacks targeting IoT devices within a Smart City infrastructure operating over 6G networks.
+It presents an AI-powered intrusion detection system designed to automatically detect and defend against cyber-attacks (DDoS, MITM, Botnet) targeting IoT devices within Smart City infrastructures operating over 6G networks. The project follows the **CRISP-DM methodology** and evaluates detection models across four network slicing datasets: mMTC, URLLC, eMBB, and G6.
 
 ## Features
-- AI-based intrusion detection system
-- Real-time monitoring of IoT devices
-- Attack classification and automated defense response
-- Smart City network simulation over 6G
-- Dashboard for threat visualization
+- AI-based cyber-attack detection across 6G network slices (mMTC, URLLC, eMBB, G6)
+- Multi-model comparison: Logistic Regression, KNN, Random Forest, Gradient Boosting
+- Slice-specific preprocessing pipelines tailored to each network category
+- Feature selection with 62–71% dimensionality reduction while preserving detection accuracy
+- Class imbalance handling via stratified sampling and class-weighted approaches
+- Model evaluation using Accuracy, Precision, Recall, F1-score, ROC-AUC
+- Permutation-based feature importance analysis
 
 ## Tech Stack
 
-### Frontend
-- (ex: React.js / Angular / Flutter — à compléter)
+### Language
+- Python 3.x
 
-### Backend
-- (ex: Spring Boot / Flask / FastAPI — à compléter)
+### Data Manipulation & Computing
+- Pandas
+- NumPy
 
-### AI / ML
-- Python
-- TensorFlow / PyTorch / Scikit-learn
+### Data Visualization
+- Matplotlib
+- Seaborn
 
-### IoT & Network
-- MQTT Protocol
-- 6G Network Simulation
+### Preprocessing & Feature Engineering
+- Scikit-learn (StandardScaler, RobustScaler, OneHotEncoder, SimpleImputer, KNNImputer, ColumnTransformer, Pipeline)
 
-### Database
-- (ex: MySQL / MongoDB — à compléter)
+### Machine Learning Models
+- Logistic Regression (baseline)
+- K-Nearest Neighbors (KNN)
+- Random Forest Classifier
+- Gradient Boosting Classifier
+
+### Model Evaluation
+- classification_report, confusion_matrix
+- roc_auc_score, RocCurveDisplay
+- Permutation Feature Importance
+
+### Project Organization
+- Pathlib
 
 ## Architecture
-> Insérer ici un schéma d'architecture (image ou diagramme)
 
-## Contributors
-| Nom | Rôle |
-|-----|------|
-| Zahra Bendhaw | (votre rôle) |
-| (Coéquipier 2) | (rôle) |
-| (Coéquipier 3) | (rôle) |
-
-## Academic Context
-Developed at **Esprit School of Engineering – Tunisia**
-PI – 4DATA | Academic Year 2025–2026
-
-## Getting Started
-
-### Prerequisites
-```bash
-# à compléter selon vos technos
-```
-
-### Installation
-```bash
-git clone https://github.com/votre-username/Esprit-PI-4DATA-2026-SmartCityIoT6G.git
-cd Esprit-PI-4DATA-2026-SmartCityIoT6G
-```
-
-### Run the project
-```bash
-# à compléter
-```
-
-## Acknowledgments
-We would like to thank **Esprit School of Engineering** and our supervisor for their guidance throughout this project.
+The project follows the CRISP-DM methodology across 6 phases:
