@@ -119,18 +119,6 @@ Global.csv
 6G_English_Education_Network_Traffic.csv
 ```
 
-### Run the Project
-```bash
-# Data Understanding
-python data_understanding.py
-
-# Data Preparation
-python data_preparation.py
-
-# Modeling & Evaluation
-python modeling.py
-```
-
 ## Acknowledgments
 We would like to thank **Esprit School of Engineering** and our supervisor for their guidance throughout this project.
 
